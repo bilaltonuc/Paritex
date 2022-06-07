@@ -1,6 +1,6 @@
 Feature: US1001 login process
 
-
+@WebU
   Scenario: TC01_İnvalid username can login with correct password
 
     Given User goes to "paritexPage"

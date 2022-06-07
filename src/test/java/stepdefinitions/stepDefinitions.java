@@ -72,7 +72,7 @@ public class stepDefinitions {
 
     @And("Login with clicking")
     public void click() {
-        paritexPage.otpGirişYapButton.click();
+        paritexPage.otpLoginButton.click();
 
     }
 
@@ -101,7 +101,20 @@ public class stepDefinitions {
     }
 
 
+    @And("User enters from the scnerio outline {string}")
+    public void userEntersFromTheScnerioOutline(String eposta) {
+        paritexPage.epostaBox.sendKeys(eposta);
+    }
 
+    @And("User enters from the scnerio outline as parola {string}")
+    public void userEntersFromTheScnerioOutlineAsParola(String parola) {
+        paritexPage.parolaBox.sendKeys(parola);
+    }
+
+    @And("User can not click on the login in button")
+    public void userCanNotClickOnTheLoginInButton() {
+       Assert.assertTrue(paritexPage.epostaBox.isDisplayed());
+    }
 }
 
 

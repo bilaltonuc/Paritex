@@ -37,13 +37,11 @@ public class ParitexPage {
     public WebElement otpBox;
 
     @FindBy(xpath = "(//app-submit-button[@btnclass='primary'])[2]")
-    public WebElement otpGirişYapButton;
+    public WebElement otpLoginButton;
 
     @FindBy(xpath = "(//div[@class='body-1 ml-10 font-medium leading-snug'])[1]")
     public WebElement  loginLogo;
 
-    @FindBy(xpath = "(//span[@class='mat-button-wrapper'])[5]'])[1]")
-    public WebElement  loginValidation;
 
 
 

@@ -21,8 +21,8 @@ public class Driver {
 
 
 
-        if(driver==null){   // bu if sayesinde kod calisirken bir kere new keyword ile driver olusturulaca
-            // diger kullanimlarda new devreye girmeyecek
+        if(driver==null){   // With this if, the driver will be created with the new keyword once the code is running.
+            // new will not be used in other uses
             switch (ConfigReader.getProperty("browser")){
 
                 case "chrome":

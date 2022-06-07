@@ -1,5 +1,5 @@
 Feature: US1002 negative login
-
+  @WebU
 
 
 
@@ -12,7 +12,7 @@ Feature: US1002 negative login
     Then  Clicks on login in button
     And   Verify can not login in
 
-  @Dinamik
+  @WebU
   Scenario: TC3_Invalid username cannot login with valid password
 
     Given User goes to "paritexPage"
@@ -22,7 +22,7 @@ Feature: US1002 negative login
     Then  Clicks on login in button
     And   Verify can not login in
 
-
+  @WebU
 Scenario: TC3_Invalid username cannot login with invalid password
 
 
